@@ -1,0 +1,70 @@
+/* AppNho Garment Academy language selector */
+#appnho-language-switch {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 99999;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px;
+  border: 1px solid rgba(27, 55, 67, .16);
+  border-radius: 999px;
+  background: rgba(255,255,255,.96);
+  box-shadow: 0 5px 22px rgba(16, 39, 49, .16);
+  backdrop-filter: blur(10px);
+  font: 700 12px/1.2 Inter, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+#appnho-language-switch .appnho-language-caption {
+  padding: 0 7px 0 9px;
+  color: #687588;
+  font-size: 9px;
+  letter-spacing: .08em;
+}
+#appnho-language-switch button {
+  min-width: 37px;
+  height: 32px;
+  padding: 0 9px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #40515c;
+  font: inherit;
+  cursor: pointer;
+}
+#appnho-language-switch button:hover { background: #edf3f1; }
+#appnho-language-switch button.is-active {
+  background: #236b58;
+  color: #fff;
+}
+#appnho-language-switch button:focus-visible {
+  outline: 3px solid #d99a45;
+  outline-offset: 2px;
+}
+#appnho-language-status {
+  position: fixed;
+  right: 18px;
+  bottom: 64px;
+  z-index: 99998;
+  max-width: min(360px, calc(100vw - 36px));
+  padding: 9px 12px;
+  border: 1px solid #ead8b7;
+  border-radius: 10px;
+  background: #fffaf0;
+  color: #66502d;
+  box-shadow: 0 4px 16px rgba(16,39,49,.10);
+  font: 12px/1.45 Inter, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+#appnho-language-status[hidden] { display: none !important; }
+@media (max-width: 600px) {
+  #appnho-language-switch { right: 12px; bottom: 12px; }
+  #appnho-language-status { right: 12px; bottom: 58px; }
+}
+
+/* Session 05: keep wide technical tables readable without forcing mobile page overflow. */
+.bilingual-table-scroll{display:block;width:100%;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;margin:12px 0 18px}
+.bilingual-table-scroll>table{width:max-content;min-width:100%;max-width:none}
+
+/* Prevent document-level horizontal scrolling; wide tables retain their own scroll area. */
+html{overflow-x:hidden}
+body{max-width:100%;overflow-x:hidden}

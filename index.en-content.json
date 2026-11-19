@@ -1,0 +1,370 @@
+{
+  "terms": {
+    "T001": {
+      "definition_en": "A woven fabric is formed by interlacing two perpendicular yarn systems: warp and weft. Its structure is generally dimensionally stable and less extensible than a knitted fabric, unless elastomeric yarns are incorporated."
+    },
+    "T002": {
+      "definition_en": "A knitted fabric is formed from interconnected yarn loops. Depending on the knit construction and fibre content, it generally offers greater stretch and drape than woven fabric."
+    },
+    "T003": {
+      "definition_en": "A sheet material made by bonding fibres through mechanical, thermal or chemical processes rather than conventional weaving or knitting."
+    },
+    "T004": {
+      "definition_en": "A natural fibre obtained from the boll of the cotton plant. Cotton generally absorbs moisture well, dyes readily and feels comfortable against the skin. Creasing, shrinkage and strength depend on fibre quality, fabric construction and finishing."
+    },
+    "T005": {
+      "definition_en": "A widely used synthetic fibre known for good strength, wrinkle resistance and relatively quick drying. It absorbs less moisture than cotton; actual performance depends on construction and finishing."
+    },
+    "T006": {
+      "definition_en": "The mass of one square metre of fabric, expressed in grams per square metre (g/m²). A higher GSM indicates greater mass per unit area, but does not automatically mean better quality or greater thickness in every case."
+    },
+    "T007": {
+      "definition_en": "The yarn system running lengthwise through a woven fabric. Warp yarns are generally held under tension during weaving."
+    },
+    "T008": {
+      "definition_en": "The yarn system running across the fabric width and interlacing with the warp in a woven structure."
+    },
+    "T009": {
+      "definition_en": "The basic woven construction in which each weft yarn passes alternately over and under successive warp yarns. The two fabric faces are usually similar, and the structure is relatively balanced."
+    },
+    "T010": {
+      "definition_en": "A woven construction that produces characteristic diagonal ribs on the fabric surface. Denim is a familiar example of twill fabric."
+    },
+    "T011": {
+      "definition_en": "The dimensional change in fabric after washing, steaming or another specified treatment. The test method, temperature, duration and measurement direction must be stated."
+    },
+    "T012": {
+      "definition_en": "The ability of a material to retain its colour when exposed to conditions such as washing, rubbing, perspiration or light. Results must be reported against a defined test method and rating scale."
+    },
+    "T013": {
+      "definition_en": "A line joining two or more material layers by stitching or another suitable joining method. Distinguish a seam (the join) from a stitch (the stitch formation or thread structure)."
+    },
+    "T014": {
+      "definition_en": "The thread structure formed by the needle, thread and sewing-machine mechanism to create a connection. Stitch type affects seam strength, extensibility and appearance."
+    },
+    "T015": {
+      "definition_en": "The portion of material extending beyond the intended seam line, provided for joining or edge finishing. Its width depends on the design, seam type and technical specification."
+    },
+    "T016": {
+      "definition_en": "A sewing method in which thread wraps around the fabric edge to join layers and/or prevent fraying. Overlock machines commonly use multiple needles and loopers."
+    },
+    "T017": {
+      "definition_en": "A stitch formation in which the needle thread interlocks with the bobbin thread within the material. It is widely used on industrial single-needle sewing machines."
+    },
+    "T018": {
+      "definition_en": "A sewing machine designed to finish fabric edges with an overedge stitch. Depending on the application and seam requirement, it may be configured for three, four or five threads."
+    },
+    "T019": {
+      "definition_en": "An industrial sewing machine with one needle, commonly forming a lockstitch. It is used for a wide range of joining, topstitching and detail operations, depending on the attachments and setup."
+    },
+    "T020": {
+      "definition_en": "A supporting material used to add shape, stability or body to garment components such as collars, plackets and cuffs. Interlinings may be fusible or sewn-in."
+    },
+    "T021": {
+      "definition_en": "A fastening component consisting of two rows of teeth or coils and a slider. Select the type, length, tooth material and end stops to suit the garment design."
+    },
+    "T022": {
+      "definition_en": "A geometric template for an individual garment component, used as the basis for cutting. A pattern should identify seam lines, notches, grainlines, component codes and size information as required."
+    },
+    "T023": {
+      "definition_en": "The process of developing a range of sizes from a base pattern by applying defined increments at individual measurement points. It is not simply uniform enlargement or reduction of the entire pattern."
+    },
+    "T024": {
+      "definition_en": "A layout of pattern pieces on the fabric width, planned around order quantities, size ratios, grain direction and fabric-face requirements while making efficient use of material."
+    },
+    "T025": {
+      "definition_en": "The operation of separating fabric components according to the marker and technical requirements. Grain direction, ply count, cutting accuracy and bundle identification require control."
+    },
+    "T026": {
+      "definition_en": "A technical document package describing product requirements. It commonly includes technical drawings, measurement specifications, materials, construction details, colours, labels, packing instructions and inspection requirements. Exact contents vary by customer."
+    },
+    "T027": {
+      "definition_en": "A list of materials and trims required for a product or order, typically including item codes, descriptions, colours, units, consumption allowances and suppliers. Always verify the current revision before ordering."
+    },
+    "T028": {
+      "definition_en": "The activities used to inspect and control materials, work in progress and finished goods to verify that they meet defined requirements. Criteria should be clear, measurable and supported by inspection records."
+    },
+    "T029": {
+      "definition_en": "Acceptance Quality Limit is a parameter used in acceptance-sampling procedures under the applicable standard. It is not the permitted defect rate for the entire lot; the decision depends on sample size, inspection level and acceptance/rejection numbers."
+    },
+    "T030": {
+      "definition_en": "The standard time allocated to an operation or product under the time-study method and allowances adopted by the business. The calculation basis must be consistent before productivity figures are compared."
+    },
+    "T031": {
+      "definition_en": "The operation of laying fabric plies on a cutting table to the required length, ply count, face orientation and grain direction. Control fabric tension, edge alignment, defects and spreading direction."
+    },
+    "T032": {
+      "definition_en": "A condition in which a seam is puckered or gathered instead of lying flat. Possible causes include thread tension, stitch length, needle selection, presser-foot settings, fabric feed imbalance and fabric shrinkage."
+    },
+    "T033": {
+      "definition_en": "The machine component that penetrates the material and carries the needle thread to form a stitch. Select it by needle system, size, point style and material; an unsuitable needle can cause skipped stitches, fabric damage or thread breakage."
+    },
+    "T034": {
+      "definition_en": "The ability of a seam to withstand force before thread breakage, stitch slippage or fabric failure occurs near the seam. Performance depends on seam construction, thread, stitch density and material."
+    },
+    "T035": {
+      "definition_en": "The dimensions measured on a garment at specified points of measurement (POM) using an agreed procedure. Define garment condition, placement method and tolerances before measuring."
+    },
+    "T036": {
+      "definition_en": "The permitted deviation from a target measurement. Tolerances should be specified for each measurement point and unit; do not infer them when the customer specification is silent."
+    },
+    "T037": {
+      "definition_en": "The process of bonding fusible interlining to the shell fabric using controlled heat, pressure and dwell time. Follow the machine settings and verify adhesion to prevent bubbling, delamination or distortion."
+    },
+    "T038": {
+      "definition_en": "A group of cut components, commonly organised by size, colour or quantity and identified with a ticket before being sent to the next operation. Bundle numbering supports traceability and helps prevent component mixing."
+    },
+    "T039": {
+      "definition_en": "A visible line of stitching on the garment face, used to secure an edge, reinforce a seam or create a design effect. Stitch distance and consistency should match the approved sample."
+    },
+    "T040": {
+      "definition_en": "The number of stitches within one inch of seam length. SPI affects seam appearance and performance; the required value should come from the product standard or technical specification."
+    }
+  },
+  "category_en": {
+    "Vải vóc": "Fabric types",
+    "Xơ & sợi": "Fibres & yarns",
+    "Thông số vải": "Fabric specifications",
+    "Cấu trúc vải": "Fabric construction",
+    "Kiểm tra vải": "Fabric testing",
+    "Kỹ thuật may": "Sewing technology",
+    "Máy móc": "Machinery",
+    "Nguyên phụ liệu": "Materials & trims",
+    "Thiết kế rập": "Pattern engineering",
+    "Quy trình sản xuất": "Production processes",
+    "Tài liệu kỹ thuật": "Technical documentation",
+    "Quản lý chất lượng": "Quality management",
+    "Quản lý sản xuất": "Production management",
+    "Lỗi may": "Sewing defects",
+    "Kiểm tra chất lượng": "Quality inspection",
+    "Thông số sản phẩm": "Garment measurements",
+    "Thông số may": "Sewing specifications"
+  },
+  "level_en": {
+    "Cơ bản": "Foundation",
+    "Trung cấp": "Intermediate",
+    "Nâng cao": "Advanced",
+    "Tham khảo": "Reference"
+  },
+  "lessons_en": {
+    "L01": {
+      "title": "Distinguishing Woven, Knitted and Nonwoven Fabrics",
+      "category": "Fabric types",
+      "level": "Foundation",
+      "summary": "Recognise the three fundamental material structures before selecting a fabric or reviewing a technical specification.",
+      "body": [
+        "Woven fabric is formed by interlacing warp and weft yarns. This construction is generally dimensionally stable and can produce plain, twill or satin surfaces. Common examples include poplin, canvas and denim.",
+        "Knitted fabric is formed from interconnected yarn loops. The loop structure gives the fabric mechanical stretch. Single jersey is widely used for T-shirts; rib is common for neckbands and cuffs; interlock has a more balanced two-sided construction.",
+        "Nonwoven fabric is made by bonding a fibre web through mechanical, thermal or chemical processes. Some types are used for interlinings, filtration materials and disposable products.",
+        "When assessing a sample, examine its construction, stretch it in both directions, inspect the cut edge and check the fibre-content label. Fibre composition should not be determined by touch alone."
+      ],
+      "takeaways": [
+        "Woven: warp and weft yarns interlace.",
+        "Knitted: interconnected yarn loops form the structure.",
+        "Nonwoven: a bonded fibre web made without conventional weaving or knitting."
+      ]
+    },
+    "L02": {
+      "title": "Understanding GSM and Basic Fabric Specifications",
+      "category": "Fabric specifications",
+      "level": "Foundation",
+      "summary": "Understand GSM, fabric width and fibre content, and why no single parameter can describe overall fabric quality.",
+      "body": [
+        "GSM means grams per square metre (g/m²). It expresses fabric mass per unit area. A sample with a known area can be weighed and the result converted to one square metre.",
+        "For example, a fabric sample measuring 0.01 m² and weighing 1.8 g has an approximate mass of 180 g/m². In practice, use a suitable sample cutter and balance, and follow the specified test method.",
+        "GSM is not a direct measure of thickness, strength or quality. Two fabrics with the same GSM may have different thicknesses because of yarn structure, porosity, weave or knit construction and finishing.",
+        "When inspecting incoming fabric, review fibre content, GSM, usable width, shade, construction, shrinkage and the inspection requirements for the order together."
+      ],
+      "takeaways": [
+        "GSM = g/m².",
+        "Compare GSM results only when the same test method is used.",
+        "Assess GSM alongside fibre content, construction and other quality characteristics."
+      ]
+    },
+    "L03": {
+      "title": "Basic Components of a Seam",
+      "category": "Sewing technology",
+      "level": "Foundation",
+      "summary": "Distinguish seam, stitch and seam allowance—three terms that are often confused in technical discussions.",
+      "body": [
+        "A seam is the line joining material pieces. A stitch is the stitch formation or thread structure that creates the connection. Seam allowance is the material left beyond the seam line to make the join.",
+        "Pattern drawings may show the stitching line, finished edge or seam allowance. Confirm the drawing convention because some patterns include seam allowance while others show only the finished seam line.",
+        "There is no single seam-allowance width suitable for every location. Side seams, necklines, sleeve setting and hems may require different values depending on the design and machinery.",
+        "When inspecting a seam, check alignment, stitch density, thread tension, puckering, skipped stitches and seam performance against the applicable standard."
+      ],
+      "takeaways": [
+        "Seam = the line joining material pieces.",
+        "Stitch = the stitch formation or thread structure.",
+        "Seam allowance = the material provided beyond the seam line."
+      ]
+    },
+    "L04": {
+      "title": "The Production Flow for a Garment Order",
+      "category": "Production",
+      "level": "Foundation",
+      "summary": "Follow the workflow from technical documentation through to finished, packed garments.",
+      "body": [
+        "Production typically begins with customer requirements, sample development, sample approval and confirmation of the technical package. The exact sequence may vary by business.",
+        "Before production, the factory confirms materials and trims, colours, quantities, size range, BOM, measurement specifications and the effective tech-pack revision. Using an outdated revision can result in incorrect purchasing or construction.",
+        "Fabric is inspected and, where required, relaxed before spreading and cutting to the marker. Cut components are identified, bundled and transferred to the sewing lines.",
+        "After sewing, garments move through finishing operations such as thread trimming, pressing, inspection, measurement, metal detection where required, packing and shipment.",
+        "Control points should be established at incoming inspection, after cutting, during sewing, at end of line and before shipment. Inspection records should identify the lot, date, inspector and result."
+      ],
+      "takeaways": [
+        "Approve samples and technical documentation before production.",
+        "Control materials and cutting before components enter the sewing line.",
+        "Inspect during production, at end of line and before shipment."
+      ]
+    },
+    "L05": {
+      "title": "Reading a Tech Pack and Bill of Materials",
+      "category": "Technical documentation",
+      "level": "Intermediate",
+      "summary": "Locate product, material, measurement and revision information in the technical package.",
+      "body": [
+        "A tech pack is the technical instruction package for a product. Depending on the customer, it may include front and back drawings, construction details, measurement charts, tolerances, colourways, labels, sewing instructions, packing requirements and inspection criteria.",
+        "A BOM lists the materials and trims required. Common fields include item code, description, colour, supplier, unit of measure, consumption allowance and notes. The BOM must be checked against the approved sample and the currently effective tech pack.",
+        "When receiving documents, verify the style code, season or order, size range, issue date, revision number and approval status. Draft or superseded documents must not be used to release production.",
+        "If two documents conflict, identify the exact points of disagreement and request confirmation from the authorised owner. Do not choose whichever information is more convenient."
+      ],
+      "takeaways": [
+        "Always verify the style code and revision.",
+        "Cross-check the BOM against the tech pack and approved sample.",
+        "Record and clarify every conflict before production begins."
+      ]
+    },
+    "L06": {
+      "title": "Recognising Common Sewing Defects",
+      "category": "Quality management",
+      "level": "Intermediate",
+      "summary": "Describe defects precisely and investigate causes across materials, machines, thread and operator methods.",
+      "body": [
+        "Seam puckering occurs when a seam gathers instead of lying flat. Possible causes include unsuitable thread tension, stitch length, needle or presser-foot settings, differential fabric feed and the material's shrinkage characteristics.",
+        "Skipped stitches may be associated with a bent or unsuitable needle, incorrect needle installation, thread, hook timing or fabric characteristics. Investigate systematically rather than simply increasing thread tension.",
+        "Thread breakage may result from the thread path, needle condition, thread quality, tension, rough machine surfaces or operating speed.",
+        "A defect description should state its location, severity, frequency, impact and supporting photograph. Classify it using the customer's standard; do not assign critical, major or minor status without the applicable definitions."
+      ],
+      "takeaways": [
+        "Describe defects with a precise location and supporting evidence.",
+        "Investigate needle, thread, machine, material and operator-related causes.",
+        "Use the customer's standard to classify defects."
+      ]
+    },
+    "L07": {
+      "title": "Standard Minutes and SMV on the Sewing Line",
+      "category": "Production management",
+      "level": "Advanced",
+      "summary": "Understand SMV and how it is used for line balancing, planning and performance monitoring.",
+      "body": [
+        "SMV is the standard time allocated to an operation or product. Depending on the company's method, its development may include basic operation time, performance rating and allowances.",
+        "Illustrative example: if an operation has an SMV of 0.65 minutes and an operator completes 80 accepted pieces in 60 minutes, the standard minutes earned are 52. A simple individual efficiency calculation is 52/60 = 86.7%. This is a learning example; actual reporting must follow the factory's agreed conventions.",
+        "Line balancing distributes work among stations to reduce bottlenecks and waiting time. It must take account of skills, machine availability, operation sequence, quality and the stability of material supply.",
+        "SMV alone should not be used to judge an operator's capability. Working conditions, operation difficulty, input quality, machine downtime and repair rates also need to be considered."
+      ],
+      "takeaways": [
+        "SMV is a standard allowance, not the actual time achieved by every operator.",
+        "State the formula and measurement scope when reporting efficiency.",
+        "Line balancing must consider bottlenecks and quality."
+      ]
+    },
+    "L08": {
+      "title": "Testing Fabric Shrinkage and Colourfastness",
+      "category": "Fabric testing",
+      "level": "Intermediate",
+      "summary": "Understand the purpose of these tests and how to interpret results within their stated conditions.",
+      "body": [
+        "Shrinkage describes a dimensional change after a defined treatment. Record the washing, ironing or steaming method, temperature, duration, number of cycles and measurement direction.",
+        "A commonly used dimensional-change formula is: (dimension after treatment − original dimension) / original dimension × 100%. A negative value generally indicates shrinkage; a positive value indicates an increase in dimension.",
+        "Colourfastness is a group of performance characteristics, not a single result. Depending on the intended use, testing may cover washing, dry or wet rubbing, perspiration or light exposure.",
+        "Every report should state the test method, specimen, conditions, result and acceptance criteria. Results from different methods should not be compared directly."
+      ],
+      "takeaways": [
+        "Shrinkage results depend on the test conditions.",
+        "Colourfastness comprises several distinct test methods.",
+        "Reports must identify the method and acceptance criteria."
+      ]
+    }
+  },
+  "questions_en": [
+    {
+      "q": "Which two yarn systems form the basic structure of woven fabric?",
+      "opts": [
+        "Interlocking loops and hooks",
+        "Warp and weft yarns",
+        "Fibres and polymer films",
+        "Needle thread and bobbin thread"
+      ],
+      "why": "Woven fabric is formed by interlacing warp and weft yarns."
+    },
+    {
+      "q": "What does GSM measure?",
+      "opts": [
+        "Stitches per inch",
+        "Mass per square metre",
+        "Fabric tensile strength",
+        "Fabric width"
+      ],
+      "why": "GSM means grams per square metre (g/m²)."
+    },
+    {
+      "q": "Which term refers to the material left beyond the seam line?",
+      "opts": [
+        "Stitch",
+        "Seam",
+        "Seam allowance",
+        "Topstitch"
+      ],
+      "why": "Seam allowance is the material provided beyond the seam line."
+    },
+    {
+      "q": "What is a BOM primarily used for?",
+      "opts": [
+        "Listing materials and trims",
+        "Testing colourfastness",
+        "Planning a sewing line",
+        "Assessing operator skill"
+      ],
+      "why": "BOM stands for Bill of Materials, a list of the materials and trims required."
+    },
+    {
+      "q": "What is the most accurate description of AQL in inspection?",
+      "opts": [
+        "The defect rate guaranteed to be permitted in the entire lot",
+        "A parameter used in acceptance-sampling procedures",
+        "The number of garments requiring repair",
+        "The standard time for an operation"
+      ],
+      "why": "AQL is associated with an acceptance-sampling plan; it is not the permitted defect rate for the entire lot."
+    },
+    {
+      "q": "What does SMV primarily represent?",
+      "opts": [
+        "Fabric mass per unit area",
+        "Standard time",
+        "Shrinkage",
+        "Seam width"
+      ],
+      "why": "SMV stands for Standard Minute Value, the standard time expressed in minutes."
+    },
+    {
+      "q": "What structure primarily forms knitted fabric?",
+      "opts": [
+        "Interlaced warp and weft yarns",
+        "Interconnected yarn loops",
+        "A thermally bonded fibre web only",
+        "Layers of coated film"
+      ],
+      "why": "Knitted fabric is formed from interconnected yarn loops."
+    },
+    {
+      "q": "What should be done when two technical documents conflict?",
+      "opts": [
+        "Choose the newer information based on personal judgement",
+        "Follow whichever version is easier to manufacture",
+        "Record the conflict and obtain authorised confirmation",
+        "Ignore the conflicting information"
+      ],
+      "why": "Verify the document revisions and obtain authorised confirmation rather than making assumptions."
+    }
+  ]
+}

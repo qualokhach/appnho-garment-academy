@@ -1,0 +1,114 @@
+/* AppNho ecosystem shell — shared header/footer */
+.site-header{height:76px;background:#fff;border-bottom:1px solid #e7eaf0;display:flex;align-items:center;padding:0 4vw;position:sticky;top:0;z-index:100}.site-header .brand{display:flex;align-items:center;margin-right:auto}.site-header .appnho-logo{display:block;width:132px;height:auto;max-height:none;object-fit:contain}.main-nav{display:flex;align-items:center;gap:2px}.main-nav>a,.nav-drop>a{padding:28px 9px;font-size:11px;font-weight:850;letter-spacing:.35px;white-space:nowrap}.main-nav>a:hover,.nav-drop>a:hover,.main-nav .active,.nav-drop.active>a{color:#e68a05}.nav-drop{position:relative}.nav-drop>a{display:flex;align-items:center;gap:3px}.nav-drop>a span{font-size:14px}.dropdown{position:absolute;top:69px;left:0;min-width:220px;background:#fff;border:1px solid #e7eaf0;border-radius:0 0 14px 14px;padding:8px;box-shadow:0 18px 40px #17203318;opacity:0;visibility:hidden;transform:translateY(6px);transition:.18s}.nav-drop:hover .dropdown,.nav-drop:focus-within .dropdown{opacity:1;visibility:visible;transform:none}.dropdown a{display:block;padding:10px 12px;border-radius:9px;font-size:13px}.dropdown a:hover{background:#fff6df;color:#9a5b00}.menu-toggle{display:none;border:0;background:none;font-size:25px;cursor:pointer}.appnho-footer{padding:48px 7vw 24px;background:#172033;color:#d7deea;border-top:1px solid #e7eaf0}.appnho-footer-grid{display:grid;grid-template-columns:1.35fr repeat(3,1fr);gap:35px;max-width:1180px;margin:0 auto}.appnho-footer .footer-brand img{width:150px;height:auto;max-height:none;object-fit:contain;margin-bottom:12px;background:#fff;padding:8px 10px;border-radius:10px}.appnho-footer .footer-brand p{max-width:330px;line-height:1.65;color:#aeb9c9;margin:0}.appnho-footer h3{font-size:12px;letter-spacing:1.2px;color:#fff;margin:5px 0 14px}.appnho-footer a{display:block;color:#aeb9c9;font-size:13px;padding:5px 0}.appnho-footer a:hover{color:#f5c552}.appnho-footer-bottom{max-width:1180px;margin:30px auto 0;padding-top:18px;border-top:1px solid #334055;display:flex;justify-content:space-between;gap:20px;font-size:12px;color:#8490a3}.appnho-footer-bottom a{display:inline-block;padding:0;color:#aeb9c9}@media(max-width:1180px){.main-nav>a,.nav-drop>a{padding-left:6px;padding-right:6px;font-size:10px}.site-header{padding:0 2.5vw}}@media(max-width:900px){.menu-toggle{display:block}.main-nav{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;padding:10px;flex-direction:column;align-items:stretch;border-bottom:1px solid #ddd;box-shadow:0 12px 25px #17203312}.main-nav.open{display:flex}.main-nav>a,.nav-drop>a{display:block;padding:14px}.dropdown{position:static;display:none;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;padding:0 0 0 15px}.nav-drop.show .dropdown{display:block}.appnho-footer-grid{grid-template-columns:1.3fr 1fr 1fr}.appnho-footer .footer-brand{grid-column:1/-1}.appnho-footer-bottom{flex-direction:column}}@media(max-width:560px){.appnho-footer-grid{grid-template-columns:1fr 1fr}.appnho-footer .footer-brand{grid-column:1/-1}}
+
+/* Approved AppNho header overlay */
+.nav-overlay{position:fixed;inset:76px 0 0;background:rgba(23,32,51,.18);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .18s ease;z-index:90}.nav-overlay.theme-apps,.nav-overlay.theme-games,.nav-overlay.theme-explore,.nav-overlay.theme-tools,.nav-overlay.theme-ai{opacity:1;visibility:visible;pointer-events:auto}
+.nav-drop.theme-apps>a{color:#c87900}.nav-drop.theme-games>a{color:#d28a00}.nav-drop.theme-explore>a{color:#a66a00}.nav-drop.theme-tools>a{color:#58647a}.nav-drop.theme-ai>a{color:#6a5ac8}
+.nav-drop.is-open .dropdown{opacity:1;visibility:visible;transform:none}.nav-drop.is-open .dropdown{border-top:3px solid var(--drop-accent,#f3aa20)}
+.nav-overlay.theme-apps{background:rgba(243,170,32,.13)}
+.nav-overlay.theme-games{background:rgba(244,181,27,.15)}
+.nav-overlay.theme-explore{background:rgba(230,154,18,.12)}
+.nav-overlay.theme-tools{background:rgba(83,101,130,.13)}
+.nav-overlay.theme-ai{background:rgba(106,90,200,.12)}
+@media(max-width:900px){.nav-overlay{inset:76px 0 0}.nav-drop.is-open .dropdown{display:block}.nav-drop.is-open .dropdown{border-top:0}}
+
+
+/* Session 2: shared-shell accessibility and responsive refinements */
+.site-header .brand { flex: 0 0 auto; min-width: 0; }
+.site-header .appnho-logo { max-width: min(132px, 28vw); }
+.site-header a:focus-visible,
+.site-header button:focus-visible,
+.appnho-footer a:focus-visible {
+  outline: 3px solid #f3aa20;
+  outline-offset: 3px;
+  border-radius: 5px;
+}
+.menu-toggle { border-radius: 8px; padding: 6px 10px; color: #172033; }
+.menu-toggle:hover { background: #fff6df; }
+@media (max-width: 900px) {
+  .site-header { padding-left: 16px; padding-right: 16px; }
+  .main-nav { max-height: calc(100dvh - 76px); overflow-y: auto; overscroll-behavior: contain; }
+  .main-nav > a, .nav-drop > a { min-height: 44px; }
+  .nav-drop.is-open > a { background: #fff8e9; border-radius: 9px; }
+  .dropdown a { min-height: 40px; display: flex; align-items: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dropdown, .nav-overlay, .main-nav, .btn { transition: none !important; }
+}
+
+/* Session 5: accessible page headings for game-first pages */
+.appnho-sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* =====================================================================
+   AppNho — Sticker / Candy redesign (shared header, menu & footer)
+   Kích thước & vị trí giữ nguyên (header 76px, dropdown top 69px,
+   overlay inset 76px) nên script menu cũ vẫn chạy bình thường.
+   ===================================================================== */
+.site-header,.appnho-footer,.dropdown,.menu-toggle{--s-navy:#172033;--s-gold:#f3aa20;--s-sun:#ffd65c;--s-cream:#fff8e8;--s-display:'Baloo 2','Nunito',system-ui,'Segoe UI',sans-serif}
+.site-header a,.appnho-footer a,.dropdown a{text-decoration:none}
+.site-header{box-sizing:border-box;background:#fff;border-bottom:3px solid #172033;font-family:'Nunito',system-ui,'Segoe UI',sans-serif}
+.site-header .brand{transition:transform .25s cubic-bezier(.34,1.56,.64,1)}
+.site-header .brand:hover{transform:rotate(-2deg) scale(1.05)}
+.main-nav>a,.nav-drop>a{font-family:var(--s-display,'Baloo 2',system-ui,sans-serif);font-size:13px;font-weight:800;letter-spacing:0;color:#172033;transition:color .15s,box-shadow .18s,background .18s}
+.main-nav>a:hover,.nav-drop>a:hover,.main-nav .active,.nav-drop.active>a,.nav-drop.is-open>a{color:#172033;background:#fff8e8;box-shadow:inset 0 -5px 0 #ffd65c}
+.nav-drop>a span{transition:transform .2s}
+.nav-drop:hover>a span,.nav-drop.is-open>a span{transform:translateY(2px) rotate(180deg)}
+.dropdown{border:2.5px solid #172033;border-top-width:3px;border-radius:0 0 22px 22px;padding:10px;box-shadow:6px 7px 0 #172033;font-family:'Nunito',system-ui,sans-serif}
+.dropdown a{font-family:'Baloo 2','Nunito',system-ui,sans-serif;font-size:15px;font-weight:700;color:#172033;border-radius:12px;transition:background .15s,transform .18s cubic-bezier(.34,1.56,.64,1)}
+.dropdown a:hover{background:#ffd65c;color:#172033;transform:translateX(4px)}
+.nav-overlay{-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px)}
+.menu-toggle{border:2.5px solid #172033;border-radius:12px;background:#ffd65c;color:#172033;padding:4px 11px;box-shadow:3px 3px 0 #172033;transition:transform .15s,box-shadow .15s}
+.menu-toggle:hover{background:#ffe08a;transform:translate(-1px,-1px);box-shadow:4px 4px 0 #172033}
+.menu-toggle:active{transform:translate(2px,2px);box-shadow:1px 1px 0 #172033}
+@media(max-width:1180px){.main-nav>a,.nav-drop>a{font-size:12px}}
+@media(max-width:1040px) and (min-width:901px){.main-nav>a,.nav-drop>a{font-size:11px;padding-left:5px;padding-right:5px}}
+@media(max-width:900px){
+.main-nav{border:0;border-bottom:3px solid #172033;box-shadow:0 10px 0 rgba(23,32,51,.12)}
+.main-nav>a,.nav-drop>a{font-size:15px;border-radius:12px}
+.main-nav>a:hover,.nav-drop>a:hover,.main-nav .active,.nav-drop.is-open>a{box-shadow:none;background:#fff1c4}
+.dropdown{border:0;border-radius:0;box-shadow:none;padding:0 0 0 15px}
+.dropdown a{font-size:15px}
+.dropdown a:hover{transform:none}
+}
+.appnho-footer{position:relative;border-top:0;border-radius:40px 40px 0 0;font-family:'Nunito',system-ui,sans-serif;background-color:#172033;background-image:radial-gradient(rgba(255,214,92,.09) 1.6px,transparent 1.9px);background-size:24px 24px}
+.appnho-footer h3{font:800 17px/1.2 'Baloo 2','Nunito',system-ui,sans-serif;letter-spacing:0;color:#ffd65c;margin:5px 0 12px}
+.appnho-footer a{font-weight:700;transition:color .15s,transform .18s cubic-bezier(.34,1.56,.64,1)}
+.appnho-footer-grid a:hover{color:#ffd65c;transform:translateX(5px)}
+.appnho-footer .footer-brand img{border:2.5px solid #fff;border-radius:16px;box-shadow:4px 4px 0 #f3aa20;transition:transform .25s cubic-bezier(.34,1.56,.64,1)}
+.appnho-footer .footer-brand a:hover img{transform:rotate(-3deg) scale(1.04)}
+.appnho-footer .footer-brand p{color:#d0d7e4;font-weight:600}
+.appnho-footer-bottom{border-top:2px dashed #3d4a63}
+.appnho-footer-bottom a:hover{transform:none}
+@media(prefers-reduced-motion:reduce){.site-header .brand,.dropdown a,.appnho-footer a,.menu-toggle{transition:none!important}.site-header .brand:hover,.appnho-footer a:hover{transform:none!important}}
+
+/* =====================================================================
+   Header thu nhỏ khi cuộn (chỉ bản máy tính, > 900px)
+   - Đầu trang: header cao 76px như cũ.
+   - Khi cuộn xuống: còn 52px (~1 dòng), logo nhỏ lại, bóng đổ nhẹ.
+   - margin-bottom bù đúng phần chiều cao bớt đi nên nội dung KHÔNG bị giật khi header đổi cỡ.
+   JS bật/tắt class "appnho-compact" trên <html>: assets/appnho-header.js
+   ===================================================================== */
+@media (min-width:901px){
+  .site-header{transition:height .22s ease,margin-bottom .22s ease,box-shadow .22s ease}
+  .site-header .appnho-logo{transition:width .22s ease}
+  .main-nav>a,.nav-drop>a{transition:color .15s,box-shadow .18s,background .18s,padding .22s ease}
+  .dropdown{transition:.18s,top .22s ease}
+  html.appnho-compact .site-header{height:52px;margin-bottom:24px;box-shadow:0 8px 20px rgba(23,32,51,.12)}
+  html.appnho-compact .site-header .appnho-logo{width:92px}
+  html.appnho-compact .main-nav>a,html.appnho-compact .nav-drop>a{padding-top:16px;padding-bottom:16px}
+  html.appnho-compact .dropdown{top:45px}
+  html.appnho-compact .nav-overlay{inset:52px 0 0}
+}
+@media (prefers-reduced-motion:reduce){
+  .site-header,.site-header .appnho-logo,.main-nav>a,.nav-drop>a,.dropdown{transition:none!important}
+}

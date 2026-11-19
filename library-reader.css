@@ -1,0 +1,117 @@
+/* AppNho Garment Academy · shared reader layer · Session 76 */
+:root{
+  --ga-body:'Nunito',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --ga-display:'Baloo 2','Nunito',system-ui,sans-serif;
+  --ga-ink:#172033;--ga-muted:#657286;--ga-green:#245b49;
+  --ga-line:#e2e8e3;--ga-paper:#fff;--ga-soft:#f4f7f5;
+}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body,button,input,select,textarea{font-family:var(--ga-body)!important}
+h1,h2,h3,h4,h5,h6,.btn,.navbtn,button{font-family:var(--ga-display)!important}
+body{color:var(--ga-ink);font-size:15px;line-height:1.72}
+a{color:var(--ga-green)}
+.ga-site-header,.ga-header{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid var(--ga-line);box-shadow:0 3px 14px rgba(23,32,51,.045)}
+.ga-site-header .ga-nav,.ga-header .nav{display:flex;align-items:center;justify-content:flex-end;gap:5px;flex-wrap:wrap}
+.ga-site-header .ga-nav a,.ga-header .nav a{font:800 13px/1.25 var(--ga-display);padding:8px 10px;border-radius:999px;text-decoration:none;white-space:nowrap;color:#465064}
+.ga-site-header .ga-nav a:hover,.ga-header .nav a:hover{background:#eaf2ed;color:var(--ga-green)}
+.ga-site-header .ga-brand,.ga-header .brand{text-decoration:none;color:var(--ga-ink)}
+.ga-site-header .ga-brand small,.ga-header .brand small{display:block;color:#7a857f;font-size:10px;letter-spacing:.08em}
+.ga-page-intro{max-width:1160px;margin:22px auto 14px;padding:clamp(22px,3vw,34px);background:linear-gradient(120deg,#fff8e8,#fff);border:1px solid #e6e8e1;border-radius:20px}
+.ga-page-intro .eyebrow{font:800 11px var(--ga-display);letter-spacing:.13em;color:var(--ga-green)}
+.ga-page-intro h1{font:800 clamp(28px,3.5vw,40px)/1.15 var(--ga-display);color:var(--ga-ink);margin:8px 0 10px}
+.ga-page-intro p{max-width:920px;color:#526071;margin:0}
+.library-breadcrumb{max-width:1160px;margin:0 auto;padding:10px 18px 0;font-size:12px}
+.library-breadcrumb a{text-decoration:none;color:#426b58}
+.ga-section-nav,.reader-toc{max-width:1160px;margin:12px auto 20px;padding:14px 18px;background:#fff;border:1px solid var(--ga-line);border-radius:14px}
+.ga-section-nav{display:flex;gap:8px;flex-wrap:wrap}
+.ga-section-nav a,.reader-toc a{display:inline-flex;align-items:center;padding:7px 11px;border-radius:999px;background:var(--ga-soft);font-size:13px;font-weight:800;text-decoration:none;color:#385b4d}
+.ga-section-nav a:hover,.reader-toc a:hover{background:#e6f0e9}
+.reader-toc strong{display:block;margin-bottom:9px;color:var(--ga-ink);font:800 15px var(--ga-display)}
+.reader-toc .toc-links{display:flex;gap:7px;flex-wrap:wrap}
+main{max-width:1160px;margin:22px auto;padding:0 18px}
+main h2{scroll-margin-top:110px}
+main h3{scroll-margin-top:110px}
+.ga-related-note{margin-top:16px;padding:12px 15px;border-left:4px solid #4c8068;background:#f0f6f1;border-radius:0 10px 10px 0;font-size:14px}
+.ga-related-note a{font-weight:800}
+footer,.footer,.ga-footer{margin-top:36px;padding:25px clamp(18px,4vw,40px);background:#172033;color:#e9edf2}
+footer a,.footer a,.ga-footer a{color:#cfe6d7}
+footer p,.footer p,.ga-footer p{color:#c2cbd5}
+table{display:block;max-width:100%;overflow-x:auto}
+img,svg{max-width:100%}
+@media(max-width:900px){
+ .ga-site-header,.ga-header{position:relative;align-items:flex-start;flex-wrap:wrap;padding:12px 16px!important}
+ .ga-site-header .ga-nav,.ga-header .nav{width:100%;justify-content:flex-start}
+ .ga-site-header .ga-nav a,.ga-header .nav a{font-size:12px;padding:7px 8px}
+ .ga-page-intro{margin:14px 12px;padding:21px}
+ main{margin:16px auto;padding:0 12px}
+ .reader-toc,.ga-section-nav{margin:10px 12px}
+}
+@media(max-width:560px){
+ body{font-size:14px}
+ .ga-site-header .ga-nav,.ga-header .nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+ .ga-site-header .ga-nav a,.ga-header .nav a{text-align:center;white-space:normal}
+ .reader-toc .toc-links{display:grid;grid-template-columns:1fr 1fr}
+ .ga-page-intro h1{font-size:28px}
+}
+
+/* Session 77 · product development group */
+.ga-related-note{margin:16px 0 18px;padding:13px 16px;border-left:4px solid #4c8068;background:#f0f6f1;border-radius:0 11px 11px 0;color:#34463d;font-size:14px;line-height:1.65}
+.ga-related-note strong{font-family:var(--ga-display)}
+.ga-related-note a{font-weight:800;text-decoration:underline;text-underline-offset:2px}
+.diagram{max-width:100%;overflow-x:auto}
+.diagram svg{display:block;max-width:100%;height:auto}
+.wrap{max-width:1240px;margin:18px auto;padding:0 18px}
+.side{border-color:var(--ga-line);border-radius:14px}
+.side button{font-family:var(--ga-body);line-height:1.45}
+.side button.active{background:#eaf2ed;color:var(--ga-green)}
+.lesson{border-color:var(--ga-line);border-radius:16px;line-height:1.75}
+.lesson h2{font-family:var(--ga-display);line-height:1.25}
+.lesson p{margin:0 0 13px}
+.practice{background:#f4f7f5;border-left:4px solid #4c8068;padding:15px 17px;border-radius:0 10px 10px 0}
+@media(max-width:780px){.wrap{padding:0 12px}.side{position:static;max-height:none}.nav{max-height:260px}}
+
+/* Session 78 — production and factory engineering cross-reference panels */
+.ga-related-note{max-width:1180px;margin:16px auto 22px;padding:15px 18px;border:1px solid rgba(100,116,139,.28);border-left:4px solid #64748b;border-radius:12px;background:rgba(148,163,184,.08);color:inherit;line-height:1.65}
+.ga-related-note strong{display:block;margin-bottom:5px;font-size:.94rem}
+.ga-related-note p{margin:0;font-size:.92rem}
+.ga-related-note a{font-weight:650;text-decoration:underline;text-underline-offset:3px;margin:0 .12em}
+@media(max-width:640px){.ga-related-note{margin:12px 12px 18px;padding:12px 14px}.ga-related-note p{font-size:.88rem}}
+
+/* Session 80 — merchandising, factory management and supply chain cross-references */
+.ga-related-note{max-width:1180px;margin:16px auto 22px;padding:15px 18px;border:1px solid rgba(100,116,139,.28);border-left:4px solid #64748b;border-radius:12px;background:rgba(148,163,184,.08);color:inherit;line-height:1.65}
+.ga-related-note strong{display:block;margin-bottom:5px;font-size:.94rem}
+.ga-related-note p{margin:0;font-size:.92rem}
+.ga-related-note a{font-weight:650;text-decoration:underline;text-underline-offset:3px;margin:0 .12em}
+@media(max-width:640px){.ga-related-note{margin:12px 12px 18px;padding:12px 14px}.ga-related-note p{font-size:.88rem}}
+
+
+/* Session 83 — consistent global header and reader navigation */
+.ga-site-header,.ga-header{
+  display:flex;align-items:center;justify-content:space-between;gap:22px;
+  min-height:78px;padding:12px clamp(18px,4vw,42px)!important;
+  width:100%;box-sizing:border-box;
+}
+.ga-site-header .ga-brand,.ga-header .brand{
+  display:flex;align-items:center;gap:12px;flex:0 0 auto;min-width:230px;
+}
+.ga-site-header .ga-brand img,.ga-header .brand img{display:block;width:58px;height:auto;max-height:42px;object-fit:contain}
+.ga-site-header .ga-brand strong,.ga-header .brand strong{display:block;font-size:21px;line-height:1.1}
+.ga-site-header .ga-brand small,.ga-header .brand small{display:block;margin-top:4px}
+.ga-site-header .ga-nav,.ga-header .nav{
+  display:flex;align-items:center;justify-content:flex-end;gap:6px;
+  flex:1 1 auto;min-width:0;flex-wrap:wrap;
+}
+.ga-site-header .ga-nav a,.ga-header .nav a{
+  display:inline-flex;align-items:center;justify-content:center;
+  white-space:normal;text-align:center;line-height:1.25;padding:9px 11px;
+}
+@media(max-width:900px){
+ .ga-site-header,.ga-header{align-items:flex-start;gap:10px}
+ .ga-site-header .ga-brand,.ga-header .brand{min-width:0}
+ .ga-site-header .ga-nav,.ga-header .nav{justify-content:flex-start}
+}
+@media(max-width:560px){
+ .ga-site-header,.ga-header{display:block}
+ .ga-site-header .ga-brand,.ga-header .brand{margin-bottom:10px}
+ .ga-site-header .ga-nav,.ga-header .nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+}
