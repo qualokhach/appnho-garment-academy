@@ -75,7 +75,7 @@
   }
   makeTablesScrollable();
   annotateText(); annotateAttributes();
-  if(window.AppNhoI18n){ window.AppNhoI18n.register('en',dictionary); }
+  if(window.AppNhoI18n){ window.AppNhoI18n.register('en',dictionary); window.AppNhoI18n.setPageReady(true); }
   updateMeta();
   var countNode=document.getElementById('count');
   if(countNode && window.MutationObserver){

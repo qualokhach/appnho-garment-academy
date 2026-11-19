@@ -60,7 +60,7 @@
   }
   makeTablesScrollable();
   annotateText(); annotateAttributes();
-  if(window.AppNhoI18n) window.AppNhoI18n.register('en',dictionary);
+  if(window.AppNhoI18n){ window.AppNhoI18n.register('en',dictionary); window.AppNhoI18n.setPageReady(true); }
   updateMeta();
   window.addEventListener('appnho:languagechange',updateMeta);
   document.addEventListener('DOMContentLoaded',updateMeta,{once:true});
