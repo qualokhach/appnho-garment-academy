@@ -1,0 +1,37 @@
+APPNHO GARMENT ACADEMY – FINAL ENGLISH BUILD AUDIT
+Scope: Phase12–Phase20
+Build basis: original project archive + recovered bilingual builds for Phase12–15 + latest cumulative session builds for Phase16–20.
+
+STRUCTURAL AUDIT
+Phase 12: source lessons=39; EN lessons=39; source body paragraph counts=[0]; EN body paragraph counts=[0]; structural count alignment=PASS.
+Phase 13: source lessons=35; EN lessons=35; source body paragraph counts=[0]; EN body paragraph counts=[0]; structural count alignment=PASS.
+Phase 14: source lessons=44; EN lessons=44; source body paragraph counts=[5, 6]; EN body paragraph counts=[5, 6]; structural count alignment=PASS.
+Phase 15: source lessons=55; EN lessons=55; source body paragraph counts=[5, 6]; EN body paragraph counts=[5, 6]; structural count alignment=PASS.
+Phase 16: source lessons=48; EN lessons=48; source body paragraph counts=[4, 5, 6, 7]; EN body paragraph counts=[4, 5, 6, 7]; structural count alignment=PASS.
+Phase 17: source lessons=50; EN lessons=50; source body paragraph counts=[5, 6]; EN body paragraph counts=[5, 6]; structural count alignment=PASS.
+Phase 18: source lessons=47; EN lessons=47; source body paragraph counts=[5, 6]; EN body paragraph counts=[5, 6]; structural count alignment=PASS.
+Phase 19: source lessons=53; EN lessons=53; source body paragraph counts=[6, 8]; EN body paragraph counts=[6, 8]; structural count alignment=PASS.
+Phase 20: source lessons=53; EN lessons=53; source body paragraph counts=[6, 8]; EN body paragraph counts=[6, 8]; structural count alignment=PASS.
+
+LANGUAGE AND CODE CHECKS
+- Phase12–20 English dictionary entries were checked against the source lesson counts.
+- Phase12–13 use the original overview/method/caution/deep/applied schema; category labels are translated through the category map.
+- Phase14–20 body paragraph counts match the source lesson by lesson.
+- No Vietnamese diacritics were found in the English lesson content fields, apart from a false-positive French loanword accent in “appliqué” (Phase16).
+- Phase12–20 JavaScript dictionaries passed Node syntax validation.
+- Inline scripts extracted from all nine Phase HTML pages passed Node syntax validation.
+- ZIP integrity (CRC) passed.
+- The original Vietnamese lesson arrays were not rewritten by this packaging step.
+- This was a static source audit. A full interactive browser test across all nine pages was not performed in this build environment.
+
+SOURCE CONTENT EDITORIAL EXCEPTIONS
+The following are issues already present in the Vietnamese source content and therefore were not silently rewritten in the English translation:
+- Phase18: two long body paragraphs are repeated across different lessons.
+- Phase19: 16 long body paragraphs are repeated across different lessons; several repeated blocks were previously noted around lessons 41–50.
+- Phase20: 30 long body paragraphs are repeated across different lessons; previously noted shared sections include lessons 31–40 and 41–50.
+These repetitions require a separate academic-content editing pass against the Vietnamese source before replacing them. They are not translation omissions.
+
+COMMIT NOTES
+- Keep the directory structure unchanged.
+- Commit the contents of appnho-garment-academy-main/ to the existing repository root.
+- The ZIP includes the full original project plus updated Phase12–20 HTML pages and their cumulative EN dictionaries.
