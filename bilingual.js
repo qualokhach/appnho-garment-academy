@@ -84,8 +84,12 @@
     var status = document.getElementById('appnho-language-status');
     var ready = html.getAttribute('data-appnho-i18n-ready') === 'true';
     if (status) {
-      status.hidden = current !== 'en' || ready;
-      status.textContent = 'The English edition is being prepared. Some sections may still appear in Vietnamese.';
+      var hide = current !== 'en' || ready;
+      var msg = 'The English edition is being prepared. Some sections may still appear in Vietnamese.';
+      /* Only touch the DOM when something changed: page-level MutationObservers
+         call back into setPageReady(), so unconditional writes caused an endless loop. */
+      if (status.hidden !== hide) status.hidden = hide;
+      if (status.textContent !== msg) status.textContent = msg;
     }
   }
 
@@ -132,6 +136,10 @@
     mountControl();
     current = readStoredLanguage();
     apply(document.documentElement);
+    /* Let page-level renderers (lesson lists, calculators…) sync with the stored language on load. */
+    window.addEventListener('load', function () {
+      window.dispatchEvent(new CustomEvent('appnho:languagechange', { detail: { language: current, page: location.pathname } }));
+    }, { once: true });
     if (window.MutationObserver && document.body) {
       observer = new MutationObserver(function (records) {
         records.forEach(function (record) {
@@ -155,7 +163,10 @@
       return Object.prototype.hasOwnProperty.call(dict, key) ? dict[key] : key;
     },
     setPageReady: function (ready) {
-      document.documentElement.setAttribute('data-appnho-i18n-ready', ready ? 'true' : 'false');
+      var v = ready ? 'true' : 'false';
+      if (document.documentElement.getAttribute('data-appnho-i18n-ready') !== v) {
+        document.documentElement.setAttribute('data-appnho-i18n-ready', v);
+      }
       updateControl();
     }
   };
