@@ -1,7 +1,7 @@
 /* AppNho Garment Academy language selector */
 #appnho-language-switch {
   position: fixed;
-  right: 18px;
+  left: 18px;
   bottom: 18px;
   z-index: 99999;
   display: inline-flex;
@@ -43,7 +43,7 @@
 }
 #appnho-language-status {
   position: fixed;
-  right: 18px;
+  left: 18px;
   bottom: 64px;
   z-index: 99998;
   max-width: min(360px, calc(100vw - 36px));
@@ -57,8 +57,8 @@
 }
 #appnho-language-status[hidden] { display: none !important; }
 @media (max-width: 600px) {
-  #appnho-language-switch { right: 12px; bottom: 12px; }
-  #appnho-language-status { right: 12px; bottom: 58px; }
+  #appnho-language-switch { left: 12px; bottom: 12px; }
+  #appnho-language-status { left: 12px; bottom: 58px; }
 }
 
 /* Session 05: keep wide technical tables readable without forcing mobile page overflow. */
