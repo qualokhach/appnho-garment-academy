@@ -5,17 +5,15 @@
 (function () {
   'use strict';
   var isMobile = window.matchMedia('(max-width: 820px)').matches;
+  // Monetag In-Page Push (zone 12297676) — loaded on desktop AND mobile (same tag). Banner count/position are set
+  // in the Monetag dashboard. The matching service worker (zone 12297653) is /sw.js at the site root.
+  if (!window.__appnhoMonetag) {
+    window.__appnhoMonetag = 1;
+    (function (s) { s.dataset.zone = '12297676'; s.src = 'https://nap5k.com/tag.min.js'; })
+      ([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));
+  }
   if (isMobile) {
-    // PASTE MOBILE TOP BANNER CODE HERE (renders inside #appnho-ad-top)
-  } else {
-    // Monetag In-Page Push (zone 12297676). Same snippet as supplied, appended once to <body>.
-    // Banner count/position are set in the Monetag dashboard; the right column keeps 3 slots free for it.
-    // The matching service worker (zone 12297653) is /sw.js at the site root.
-    if (!window.__appnhoMonetag) {
-      window.__appnhoMonetag = 1;
-      (function (s) { s.dataset.zone = '12297676'; s.src = 'https://nap5k.com/tag.min.js'; })
-        ([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));
-    }
+    // OPTIONAL: paste a separate banner code here to render inside #appnho-ad-top (the 62px strip at the top).
   }
 
   var path = location.pathname.replace(/\/+$/, '');
